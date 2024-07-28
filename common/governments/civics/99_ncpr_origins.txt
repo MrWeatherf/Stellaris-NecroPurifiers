@@ -1,0 +1,49 @@
+origin_necropurifier = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_necrophage.dds"
+	picture = GFX_origin_necrophage
+	flags = { custom_start_screen }
+
+	playable = {
+		host_has_dlc = "Utopia"
+		host_has_dlc = "Necroids Species Pack"
+	}
+	potential = {
+		authority = {
+			NOR = {
+				value = auth_corporate
+				value = auth_machine_intelligence
+			}
+		}
+	}
+	possible = {
+		ethics = {
+			AND = {
+				value = ethic_fanatic_xenophobe
+				OR = {
+					value = ethic_spiritualist
+					value = ethic_militarist
+				}
+			}
+		}
+		species_archetype = { NOT = { value = MACHINE } }
+	}
+
+	description = "origin_tooltip_necropurifier_effects"
+	negative_description = "origin_tooltip_necropurifier_negative_effects"
+
+	traits = {
+		trait = trait_necrophage
+	}
+	
+	modifier = {
+		country_government_civic_points_add = 1
+	}
+
+	has_secondary_species = {
+		title = civic_necrophage_secondary_species
+	}
+
+	advanced_start = no
+	blocks_random_machine_empire_generation	= yes
+}

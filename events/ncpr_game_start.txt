@@ -1,0 +1,56 @@
+namespace = ncpr_game_start
+
+event = {
+	id = ncpr_game_start.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		# Necropurifier: set flag & citizenship type, spawn prepatent Pops, add Traits, set living standards, etc.
+		# We only do this for Necropurifier; we already did this for everything else in the base game setup stuff.
+		if = {
+			limit = {
+				owner = {
+					has_origin = origin_necropurifier
+				}
+			}
+			# Force-add the fanatic purifiers civic
+			# We should already meet the other pre-requesites for this because of the
+			# origin restrictions, so this shouldn't immediately become invalid.
+			force_add_civic = civic_fanatic_purifiers
+
+			last_created_species = {
+				set_species_flag = syncretic_species@root.owner
+				set_citizenship_type = {
+				country = root.owner
+					type = citizenship_necro_slavery
+				}
+			}
+			while = {
+				# Necrophages get 12 prepatent pops, Necropurifiers will only get 8
+				# This is probably still an overpowered Origin because of the extra civic
+				# But the lower pop starting point MIGHT help balance it a tiny bit.
+				count = 8
+				create_pop = {
+					species = last_created_species
+					ethos = random
+				}
+			}
+			# Handle special buildings
+			# If you really want to play agrarian idyll necro-purgers then I think this is required?
+			# This is in the base game setup, I assume it's a one-off that needs special handling and isn't
+			# covered elsewhere, unlike most other civics, and the special origin won't trigger the normal
+			# setup flow.
+			if = {
+				limit = {
+					owner = { has_valid_civic = civic_agrarian_idyll } # Needs an extra building slot
+				}
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_city
+				}
+			}
+			# Actual necrophage building
+			add_building = building_necrophage_elevation_chamber
+		}
+	}
+}

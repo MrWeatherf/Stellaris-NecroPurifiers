@@ -1,0 +1,31 @@
+citizenship_necro_slavery = {
+	is_slavery = yes
+
+	in_breach_of = {
+		{
+			key = resolution_greatergood_balance_in_the_middle
+		}
+		{
+			key = resolution_greatergood_universal_prosperity_mandate
+		}
+	}
+
+	potential = {
+		exists = from
+		from = {
+			has_origin = origin_necropurifier
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = "NECRO_PURIFIERS_MUST_PURIFY"
+			if = {
+				NOT = {
+					has_species_flag = syncretic_species@from.owner
+				}
+			}
+		}
+	}
+}
