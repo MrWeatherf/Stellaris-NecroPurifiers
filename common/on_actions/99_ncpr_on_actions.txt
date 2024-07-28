@@ -8,3 +8,12 @@ empire_init_capital_planet = {
 		ncpr_game_start.01
 	}
 }
+
+# Called when a pop is purged, to (potentially) convert it to a necrophage
+# This has a limit for the purging empire having the necropurifier origin, so
+# it is mutually exclusive with necrophage and shouldn't create duplicate triggers
+on_pop_purged = {
+	events = {
+		ncpr_purge.01
+	}
+}
