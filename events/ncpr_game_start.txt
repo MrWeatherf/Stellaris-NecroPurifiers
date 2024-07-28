@@ -39,9 +39,7 @@ country_event = {
 				}
 				# Actual necrophage building
 				add_building = building_necrophage_elevation_chamber
-				}
-
-
+			}
 		}
 	}
 }
