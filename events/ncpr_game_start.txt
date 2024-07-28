@@ -14,10 +14,10 @@ planet_event = {
 					has_origin = origin_necropurifier
 				}
 			}
-			# Force-add the fanatic purifiers civic, requires 'from' scope because it's empire level.
+			# Force-add the fanatic purifiers civic, requires 'owner' scope because it's empire level.
 			# We should already meet the other pre-requesites for this because of the
 			# origin restrictions, so this shouldn't immediately become invalid.
-			from = {
+			owner = {
 				force_add_civic = civic_fanatic_purifiers
 			}
 
