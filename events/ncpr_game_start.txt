@@ -1,6 +1,6 @@
 namespace = ncpr_game_start
 
-country_event = {
+planet_event = {
 	id = ncpr_game_start.01
 	hide_window = yes
 	is_triggered_only = yes
@@ -14,32 +14,34 @@ country_event = {
 					has_origin = origin_necropurifier
 				}
 			}
-			# Force-add the fanatic purifiers civic
+			# Force-add the fanatic purifiers civic, requires 'from' scope because it's empire level.
 			# We should already meet the other pre-requesites for this because of the
 			# origin restrictions, so this shouldn't immediately become invalid.
-			force_add_civic = civic_fanatic_purifiers
+			from = {
+				force_add_civic = civic_fanatic_purifiers
+			}
 
+			# Configure the prepatent species, which is a planet level thing.
 			last_created_species = {
 				set_species_flag = syncretic_species@root.owner
+				set_species_flag = necrophage_purifier_prepatent
 				set_citizenship_type = {
 					country = root.owner
 					type = citizenship_necro_slavery
 				}
 			}
-			capital_scope = {
-				while = {
-					# Necrophages get 12 prepatent pops, Necropurifiers will only get 8
-					# This is probably still an overpowered Origin because of the extra civic
-					# But the lower pop starting point MIGHT help balance it a tiny bit.
-					count = 8
-					create_pop = {
-						species = last_created_species
-						ethos = random
-					}
+			while = {
+				# Necrophages get 12 prepatent pops, Necropurifiers will only get 8
+				# This is probably still an overpowered Origin because of the extra civic
+				# But the lower pop starting point MIGHT help balance it a tiny bit.
+				count = 8
+				create_pop = {
+					species = last_created_species
+					ethos = random
 				}
-				# Actual necrophage building
-				add_building = building_necrophage_elevation_chamber
 			}
+			# Actual necrophage building
+			add_building = building_necrophage_elevation_chamber
 		}
 	}
 }

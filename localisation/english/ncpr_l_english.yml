@@ -6,6 +6,7 @@
  origin_tooltip_necropurifier_negative_effects: "- Only §INecrophage $pops_with_icon$§! can be £pop_cat_ruler£ §IRulers§! or recruited as §ILeaders§! $NEW_LINE$- Purge: Must purge all xenos, other than their prepatent species."
 
  NECRO_PURIFIERS_MUST_PURIFY: "$TRIGGER_FAIL$§YFanatic Purifiers§! cannot tolerate the existence of xenos. Only their prepatent species can be subjected to necro-slavery, all others must perish."
+ NON_NECRO_PURIFIERS_CANT_DO_THIS: "$TRIGGER_FAIL$Only Necrophage Purifiers can use this citizenship type, and only for their prepatent species."
 
  citizenship_necro_slavery: "Necrophage Slavery"
  citizenship_necro_slavery_tooltip: "The prepatent species of a Necro Purifier empire is granted the dubious privilege of carrying their masters to the stars, while all other Xenos must perish."

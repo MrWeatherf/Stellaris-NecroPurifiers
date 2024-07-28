@@ -22,8 +22,25 @@ citizenship_necro_slavery = {
 		custom_tooltip = {
 			fail_text = "NECRO_PURIFIERS_MUST_PURIFY"
 			if = {
+				limit = {
+					from = {
+						has_origin = origin_necropurifier
+					}
+				}
 				NOT = {
-					has_species_flag = syncretic_species@from.owner
+					has_species_flag = necrophage_purifier_prepatent
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "NON_NECRO_PURIFIERS_CANT_DO_THIS"
+			if = {
+				limit = {
+					from = {
+						NOT = {
+							has_origin = origin_necropurifier
+						}
+					}
 				}
 			}
 		}
