@@ -1,3 +1,6 @@
+# from = country (the empire applying the citizenship)
+# this = species (the species receiving the citizenship)
+
 citizenship_necro_slavery = {
 	is_slavery = yes
 
@@ -15,33 +18,27 @@ citizenship_necro_slavery = {
 		from = {
 			has_origin = origin_necropurifier
 		}
+		has_species_flag = necrophage_purifier_prepatent
 	}
 
 	allow = {
 		hidden_trigger = { exists = from }
-		custom_tooltip = {
-			fail_text = "NECRO_PURIFIERS_MUST_PURIFY"
-			if = {
-				limit = {
-					from = {
-						has_origin = origin_necropurifier
-					}
+		if = {
+			limit = {
+				from = {
+					has_origin = origin_necropurifier
 				}
+			}
+			custom_tooltip = {
+				fail_text = "NECRO_PURIFIERS_MUST_PURIFY"
 				NOT = {
 					has_species_flag = necrophage_purifier_prepatent
 				}
 			}
 		}
-		custom_tooltip = {
-			fail_text = "NON_NECRO_PURIFIERS_CANT_DO_THIS"
-			if = {
-				limit = {
-					from = {
-						NOT = {
-							has_origin = origin_necropurifier
-						}
-					}
-				}
+		else = {
+			custom_tooltip = {
+				fail_text = "NON_NECRO_PURIFIERS_CANT_DO_THIS"
 			}
 		}
 	}
