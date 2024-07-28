@@ -22,25 +22,9 @@ citizenship_necro_slavery = {
 	}
 
 	allow = {
+		# This won't even appear for species unless they're the prepatent of a
+		# necro purifier, so don't worry about custom tooltips here
 		hidden_trigger = { exists = from }
-		if = {
-			limit = {
-				from = {
-					has_origin = origin_necropurifier
-				}
-			}
-			custom_tooltip = {
-				fail_text = "NECRO_PURIFIERS_MUST_PURIFY"
-				NOT = {
-					has_species_flag = necrophage_purifier_prepatent
-				}
-			}
-		}
-		else = {
-			custom_tooltip = {
-				fail_text = "NON_NECRO_PURIFIERS_CANT_DO_THIS"
-			}
-		}
 	}
 	ai_will_do = {
 		# AI should not use this origin
