@@ -1,8 +1,0 @@
-﻿l_english:
-
- origin_necropurifier: "Necrophage Purifier"
- origin_necropurifier_desc: "This civilization evolved as a parasite, forced to feed off other sapient life forms to sustain itself. As it arrives on the galactic stage, it will struggle for survival like never before. With their prepatent species as the closed first, and their intelligence and fury as the mailed gauntlet, they will bring the galaxy to heel. For the Necro-Purifier, there can be no other way."
- origin_tooltip_necropurifier_effects: "- $HOMEWORLD$ ['concept_necrophage_elevation_chamber'] $NEW_LINE$- $SPECIES_TRAITS$ ['concept_necrophage_trait'] $NEW_LINE$- Prepatent £pop£ §IPops§!: 8 $NEW_LINE$- ['concept_guaranteed_colonies']: Replaced with ['concept_preftl_civilizations'] $NEW_LINE$- Receives the Fanatical Purifier trait after empire creation. $NEW_LINE$- Purge: Can preserve their prepatent species."
- origin_tooltip_necropurifier_negative_effects: "- Only §INecrophage $pops_with_icon$§! can be £pop_cat_ruler£ §IRulers§! or recruited as §ILeaders§! $NEW_LINE$- Purge: Must purge all xenos, other than their prepatent species."
-
- NECRO_PURIFIERS_MUST_PURIFY: "$TRIGGER_FAIL$§YFanatic Purifiers§! cannot tolerate the existence of xenos. Only their prepatent species can be subjected to necro-slavery, all others must perish."
