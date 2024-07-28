@@ -18,12 +18,10 @@ origin_necropurifier = {
 	}
 	possible = {
 		ethics = {
-			AND = {
-				value = ethic_fanatic_xenophobe
-				OR = {
-					value = ethic_spiritualist
-					value = ethic_militarist
-				}
+			value = ethic_fanatic_xenophobe
+			OR = {
+				value = ethic_spiritualist
+				value = ethic_militarist
 			}
 		}
 		species_archetype = { NOT = { value = MACHINE } }
@@ -34,10 +32,6 @@ origin_necropurifier = {
 
 	traits = {
 		trait = trait_necrophage
-	}
-	
-	modifier = {
-		country_government_civic_points_add = 1
 	}
 
 	has_secondary_species = {

@@ -1,7 +1,7 @@
 namespace = ncpr_game_start
 
 event = {
-	id = ncpr_game_start.1
+	id = ncpr_game_start.01
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -22,7 +22,7 @@ event = {
 			last_created_species = {
 				set_species_flag = syncretic_species@root.owner
 				set_citizenship_type = {
-				country = root.owner
+					country = root.owner
 					type = citizenship_necro_slavery
 				}
 			}

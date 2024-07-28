@@ -28,4 +28,8 @@ citizenship_necro_slavery = {
 			}
 		}
 	}
+	ai_will_do = {
+		# AI should not use this origin
+		factor = 0
+	}
 }
