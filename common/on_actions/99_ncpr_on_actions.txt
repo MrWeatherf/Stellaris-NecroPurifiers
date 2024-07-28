@@ -5,7 +5,7 @@
 # fromfrom: secondary species (if exists)
 empire_init_capital_planet = {
 	events = {
-		ncpr_game_start.01
+		ncpr_events_game_start.01
 	}
 }
 
@@ -14,6 +14,6 @@ empire_init_capital_planet = {
 # it is mutually exclusive with necrophage and shouldn't create duplicate triggers
 on_pop_purged = {
 	events = {
-		ncpr_purge.01
+		ncpr_events_purge.01
 	}
 }
