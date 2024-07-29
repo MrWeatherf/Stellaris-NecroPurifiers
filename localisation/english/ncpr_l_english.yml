@@ -1,12 +1,19 @@
 ﻿l_english:
 
+ ### Heavily based on the Necrophage Origin by Pierre du Plessis, with tweaks by Mike Weatherford.
+ ### Pierre should be credited for the good parts of this, and Mike should be blamed for the rest. 
+
  origin_necropurifier: "Necrophage Purifier"
  origin_necropurifier_desc: "This civilization evolved as a parasite, forced to feed off other sapient life forms to sustain itself. As it arrives on the galactic stage, it will struggle for survival like never before. With their prepatent species as the closed first, and their intelligence and fury as the mailed gauntlet, they will bring the galaxy to heel. For the Necro-Purifier, there can be no other way."
  origin_tooltip_necropurifier_effects: "- $HOMEWORLD$ ['concept_necrophage_elevation_chamber'] $NEW_LINE$- $SPECIES_TRAITS$ ['concept_necrophage_trait'] $NEW_LINE$- Prepatent £pop£ §IPops§!: 8 $NEW_LINE$- ['concept_guaranteed_colonies']: Replaced with ['concept_preftl_civilizations'] $NEW_LINE$- Receives the Fanatical Purifier trait after empire creation. $NEW_LINE$- Purge: Can preserve their prepatent species."
  origin_tooltip_necropurifier_negative_effects: "- Only §INecrophage $pops_with_icon$§! can be £pop_cat_ruler£ §IRulers§! or recruited as §ILeaders§! $NEW_LINE$- Purge: Must purge all xenos, other than their prepatent species."
 
  citizenship_necro_slavery: "Necrophage Slavery"
- citizenship_necro_slavery_tooltip: "The prepatent species of a Necro Purifier empire is granted the dubious privilege of carrying their masters to the stars, while all other Xenos must perish."
- citizenship_necro_slavery_tooltip_delayed: "This civic can only apply to the prepatent species of a Necro Purifier, and it is invalid for all other species."
+ citizenship_necro_slavery_tooltip: "All pops of this species will be enslaved."
+ citizenship_necro_slavery_tooltip_delayed: "§LThe prepatent species of a Necro Purifier empire is granted the dubious privilege of serving alongside their masters, and carrying their empire to the stars. Between the Prepatents and the Xenos, none can say whose fate is the better one.§!"
 
-purge_necrop
+ purge_necropurifier: "Necropurifier Purge"
+ purge_necropurifier_tooltip_delayed: "§LNecro-Purifiers will not suffer the xeno to live. They will be converted, or they will perish.§!"
+
+START_SCREEN_NECROPURIFIER_BASE: "In the not-so-distant past, [GetHomeWorldName] was dominated by a fairly unremarkable species. To all onlookers, they would have seemed to be following a standard meandering course of development, with occasionally rapid periods of innovation interspersed with much longer periods of seemingly insurmountable setbacks. However, unbeknownst to them, their planet was home to a second intelligent species: us.\n\nFor millennia, we - the [GetSpeciesNamePlural] - remained undetected by the planet's proprietors. Little more than vague rumors of terrors in the night, we were a fairytale told only to scare misbehaving juveniles. But they were wrong to discount us.\n\nAs their rate of technological progress quickened, so too did our infiltration of their society."
+START_SCREEN_NECROPURIFIER: "$START_SCREEN_NECROPURIFIER_BASE$ When their fall came, it was swift and bloody. We ruthlessly took control of the planet - our precursors reduced to subservience and gradual absorption into the [GetSpeciesName] race.\n\nNow, armed with the recently-discovered secret of FTL travel, we are ready to take to the stars and remake all species of the galaxy in our likeness! We will not suffer the xeno to live, they will join us or they will perish."

@@ -96,6 +96,7 @@ planet_event = {
 				NOT = { is_same_species = FROMFROM }
 				NOT = { has_ai_personality_behaviour = purger }
 				NOT = { has_origin = origin_necrophage }
+				NOT = { has_origin = origin_necropurifier }
 				NOT = { has_ethic = ethic_gestalt_consciousness }
 				NOR = {
 					has_valid_civic = civic_death_cult

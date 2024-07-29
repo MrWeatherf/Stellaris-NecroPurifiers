@@ -21,13 +21,14 @@ planet_event = {
 				force_add_civic = civic_fanatic_purifiers
 			}
 
-			# Configure the prepatent species, which is a planet level thing.
+			# Configure the prepatent species
 			last_created_species = {
-				set_species_flag = syncretic_species@root.owner
+				set_species_flag = syncretic_species@ROOT.owner
 				set_species_flag = necrophage_purifier_prepatent
 				set_citizenship_type = {
-					country = root.owner
+					country = ROOT.owner
 					type = citizenship_necro_slavery
+					cooldown = no
 				}
 			}
 			while = {
