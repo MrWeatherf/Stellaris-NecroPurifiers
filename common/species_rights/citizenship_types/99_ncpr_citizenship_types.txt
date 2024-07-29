@@ -19,19 +19,14 @@ citizenship_necro_slavery = {
 			has_origin = origin_necropurifier
 		}
 		has_species_flag = necrophage_purifier_prepatent
+		has_species_flag = syncretic_species@from
 	}
 
 	allow = {
-		# This won't even appear for species unless they're the prepatent of a
-		# necro purifier, so don't worry about custom tooltips here
 		hidden_trigger = { exists = from }
 		custom_tooltip = {
 			fail_text = same_species_disallowed
-			NOT = { is_same_species = from }
-		}
-		custom_tooltip = {
-			fail_text = NECROPURIFIERS_MUST_PURGE
-			NOT = { has_species_flag = necrophage_purifier_prepatent }
+			not = { is_same_species = from }
 		}
 	}
 	ai_will_do = {

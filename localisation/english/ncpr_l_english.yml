@@ -9,8 +9,7 @@
  origin_tooltip_necropurifier_negative_effects: "- Only §INecrophage $pops_with_icon$§! can be £pop_cat_ruler£ §IRulers§! or recruited as §ILeaders§! $NEW_LINE$- Purge: Must purge all xenos, other than their prepatent species."
 
  citizenship_necro_slavery: "Necrophage Slavery"
- citizenship_necro_slavery_tooltip: "All pops of this species will be enslaved."
- citizenship_necro_slavery_tooltip_delayed: "§LThe prepatent species of a Necro Purifier empire is granted the dubious privilege of serving alongside their masters, and carrying their empire to the stars. Between the Prepatents and the Xenos, none can say whose fate is the better one.§!"
+ citizenship_necro_slavery_tooltip: "All pops of this species will be enslaved.\n\n§LThe prepatent species of a Necro Purifier empire is granted the dubious privilege of serving alongside their masters, and carrying their empire to the stars. Between the Prepatents and the Xenos, none can say whose fate is the better one.§!"
 
  purge_necropurifier: "Necropurifier Purge"
  purge_necropurifier_tooltip_delayed: "§LNecro-Purifiers will not suffer the xeno to live. They will be converted, or they will perish.§!"
