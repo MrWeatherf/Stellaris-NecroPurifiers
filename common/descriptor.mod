@@ -1,7 +1,8 @@
-version="3.12.*"
+version="1.0"
 tags={
 	"Species"
+	"Balance"
 	"Gameplay"
 }
-name="NecroPurifiers Origin"
+name="Necrophage Purifiers and Devourers"
 supported_version="v3.12.5"
