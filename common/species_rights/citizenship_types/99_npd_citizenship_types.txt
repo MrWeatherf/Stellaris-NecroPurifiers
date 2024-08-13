@@ -87,8 +87,15 @@ citizenship_slavery = {
 		}
 		custom_tooltip = {
 			fail_text = DEVOURERS_CANNOT_ENSLAVE
-			from = {
-				NOT = { has_valid_civic = civic_hive_devouring_swarm }
+			OR = {
+				NOT = { from = { has_valid_civic = civic_hive_devouring_swarm } }
+				AND = {
+					from = {
+						has_origin = origin_necrophage
+						has_valid_civic = civic_hive_devouring_swarm
+					}
+					has_species_flag = syncretic_species@from
+				}
 			}
 		}
 		custom_tooltip = {
@@ -104,7 +111,16 @@ citizenship_slavery = {
 			fail_text = "FANATIC_PURIFIERS_MUST_PURIFY"
 			OR = {
 				NOT = { from = { has_valid_civic = civic_fanatic_purifiers } }
-				is_same_species = from
+				OR = {
+					is_same_species = from
+					AND = {
+						has_species_flag = syncretic_species@from
+						from = { 
+							has_origin = origin_necrophage
+							has_valid_civic = civic_fanatic_purifiers
+						}
+					}
+				}
 			}
 		}
 		custom_tooltip = {

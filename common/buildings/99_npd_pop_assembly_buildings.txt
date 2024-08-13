@@ -33,10 +33,6 @@ building_necrophage_elevation_chamber = {
 		owner = {
 			has_origin = origin_necrophage
 			has_trait = trait_necrophage
-			NOR = {
-				has_valid_civic = civic_fanatic_purifiers
-				has_valid_civic = civic_hive_devouring_swarm
-			}
 		}
 	}
 
@@ -203,10 +199,6 @@ building_necrophage_house_of_apotheosis = {
 		owner = {
 			has_origin = origin_necrophage
 			has_trait = trait_necrophage
-			NOR = {
-				has_valid_civic = civic_fanatic_purifiers
-				has_valid_civic = civic_hive_devouring_swarm
-			}
 			is_ai = no #the AI will just kill all its necrophytes
 		}
 	}
