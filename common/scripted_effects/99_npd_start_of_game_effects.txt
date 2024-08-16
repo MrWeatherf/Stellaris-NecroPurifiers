@@ -136,6 +136,9 @@ generate_start_pops = {
 		limit = {
 			owner = {
 				has_origin = origin_necrophage
+				NOT = { #purges them instead
+					has_civic = civic_hive_devouring_swarm
+				}
 			}
 		}
 		if = {

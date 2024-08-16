@@ -87,15 +87,8 @@ citizenship_slavery = {
 		}
 		custom_tooltip = {
 			fail_text = DEVOURERS_CANNOT_ENSLAVE
-			OR = {
-				NOT = { from = { has_valid_civic = civic_hive_devouring_swarm } }
-				AND = {
-					from = {
-						has_origin = origin_necrophage
-						has_valid_civic = civic_hive_devouring_swarm
-					}
-					has_species_flag = syncretic_species@from
-				}
+			from = {
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 		custom_tooltip = {
